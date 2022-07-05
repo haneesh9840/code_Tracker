@@ -1,0 +1,99 @@
+<div>
+    <canvas id="myChart"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="Utils.js"></script>
+<script>
+    var d = new Date()
+    cal = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if (d.getMonth() === 1) {
+        var year = d.getFullYear()
+        if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+            cal[1] = 29
+        }
+    }
+    var s = cal[d.getMonth()]
+    var xaxis = []
+    for (var i = 1; i < s + 1; i++) {
+        xaxis.push(i)
+    }
+    /*    const datapoints = [10, 8, 1, 11, 12, 18, 19, 27, 22, 31, 10, 5, 7]
+        const data = {
+            labels: xaxis,
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: datapoints,
+            }]
+        };
+
+         const config = {
+            type: 'line',
+            data: data,
+            options: {}
+         }
+         */
+    const datapoints = [0, 20, 20, 60, 60, 120, NaN, 180, 120, 125, 105, 110, 170];
+    const data = {
+        labels: xaxis,
+        datasets: [{
+            label: 'Cubic interpolation (monotone)',
+            data: datapoints,
+            borderColor: Utils.CHART_COLORS.red,
+            fill: false,
+            cubicInterpolationMode: 'monotone',
+            tension: 0.4
+        }, {
+            label: 'Cubic interpolation',
+            data: datapoints,
+            borderColor: Utils.CHART_COLORS.blue,
+            fill: false,
+            tension: 0.4
+        }, {
+            label: 'Linear interpolation (default)',
+            data: datapoints,
+            borderColor: Utils.CHART_COLORS.green,
+            fill: false
+        }]
+    };
+    const config = {
+        type: 'line',
+        data: data,
+        options: {
+            responsive: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Chart.js Line Chart - Cubic interpolation mode'
+                },
+            },
+            interaction: {
+                intersect: false,
+            },
+            scales: {
+                x: {
+                    display: true,
+                    title: {
+                        display: true
+                    }
+                },
+                y: {
+                    display: true,
+                    title: {
+                        display: true,
+                        text: 'Value'
+                    },
+                    suggestedMin: -10,
+                    suggestedMax: 200
+                }
+            }
+        },
+    };
+</script>
+<script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+</script>

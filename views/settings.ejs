@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+    </head>
+
+    <body>
+        <h1>
+            <%=uname%>
+        </h1>
+        You can always update ur details
+        <form method="POST" action="/settings/" + "<%= uname %>"> password change
+            <input type="password" name="password" id="password"> <br>change gfg profilename:
+            <input type="text" name="gfgpn" id="gfgpn"><br> change leetcode profilename:
+            <input type="text" name="lcpn" id="lcpn"> <br>monthly target:
+            <input type="number" name="mtarget" id="mtarget"> <br>daily target:
+            <input type="text" name="dtarget" id="dtarget">
+            <br>
+            <input type="hidden" name="rest" value="<%= uname %>">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <%- include('partials/footer') %>

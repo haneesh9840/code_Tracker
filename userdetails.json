@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "6272161fa6709121d7216168"
+  },
+  "username": "dabbiruhaneesh",
+  "email": "dabbiruhaneesh@gmail.com",
+  "password": "haneesh",
+  "gfgprofilename": "dabbiruhaneesh",
+  "lcprofilename": "dabbiruhaneesh",
+  "mtarget": 120,
+  "dtarget": 6,
+  "tgfgsolved": 336,
+  "tlcsolved": 306,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6272188ce753478ad8fe0885"
+  },
+  "username": "ankit",
+  "email": "ankitcse@gmail.com",
+  "password": "ankitcse",
+  "gfgprofilename": "ankitr9981",
+  "lcprofilename": "Masters_Akt",
+  "mtarget": 150,
+  "dtarget": 4,
+  "tgfgsolved": 557,
+  "tlcsolved": 745,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627218dde753478ad8fe0889"
+  },
+  "username": "prodipta",
+  "email": "prodiptacse@gmail.com",
+  "password": "prodipta",
+  "gfgprofilename": "pp12",
+  "lcprofilename": "prodiptahalder",
+  "mtarget": 150,
+  "dtarget": 4,
+  "tgfgsolved": 502,
+  "tlcsolved": 278,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627505859dceaa771aac861f"
+  },
+  "username": "prakharrai",
+  "email": "prakharrai1609@gmail.com",
+  "password": "prakharrai",
+  "gfgprofilename": "sridiv6",
+  "lcprofilename": "prakharrai1609",
+  "mtarget": 120,
+  "dtarget": 5,
+  "tgfgsolved": 356,
+  "tlcsolved": 215,
+  "__v": 0
+}]

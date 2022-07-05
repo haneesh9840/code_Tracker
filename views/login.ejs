@@ -1,0 +1,94 @@
+<%- include('partials/header') %>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Login</title>
+    </head>
+
+    <body>
+
+
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="testimonialsControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <h2>coding is my hobby.</h2>
+                                    <img class="t-img" src="https://media.istockphoto.com/photos/programmer-working-with-program-code-picture-id1075599562?k=20&m=1075599562&s=612x612&w=0&h=cDFY2kKyhFzSNNlDQsaxoekIW0v7iyaMBkxp11Fz33U=" height=auto width=auto alt="dog-profile">
+                                    <em>Pebbles, New York</em>
+                                </div>
+                                <div class="carousel-item">
+                                    <h2 class="testimonial-text">coding is my passion.</h2>
+                                    <img class="t-img " src="https://c8.alamy.com/comp/PF3NWT/desktop-source-code-and-technology-background-developer-or-programer-with-coding-and-programming-wallpaper-by-computer-language-and-source-code-com-PF3NWT.jpg" width="600" height="600" alt="lady-profile">
+                                    <em>Beverly, Illinois</em>
+                                </div>
+                                <div class="carousel-item">
+                                    <h2 class="testimonial-text">coding is my dream.</h2>
+                                    <img class="t-img " src="https://media.wired.com/photos/5cc244c9af643e2f373ebb28/191:100/w_2400,h_1256,c_limit/Coding-Becomes-Criminal.jpg" width="600" height="600" alt="lady-profile">
+                                    <em>Beverly, Illinois</em>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 contents">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="mb-4">
+                                    <div class="center">
+                                        <h3>CodeTracker</h3>
+                                        <p class="mb-4">It helps you in building consistency!</p>
+                                    </div>
+                                </div>
+                                <form action="/login" method="post">
+                                    <div class="form-group first">
+                                        <label for="username">Username</label>
+                                        <input type="text" class="form-control" id="username" name="username">
+
+                                    </div>
+                                    <div class="form-group last mb-4">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password" name="password">
+
+                                    </div>
+
+                                    <div class="d-flex mb-5 align-items-center">
+                                        <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+                                        <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+                                    </div>
+
+                                    <input type="submit" value="Log In" class="btn btn-block btn-primary">
+
+                                    <span class="d-block text-left my-4 text-muted"><center>&mdash; or login with &mdash;</center></span>
+
+                                    <div class="social login col-md-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+                                                    <i class="fab fa-google"></i> Sign In with Google
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <%- include('partials/footer') %>

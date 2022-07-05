@@ -1,0 +1,70 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f8fafb;
+    padding: 4%;
+}
+
+p {
+    color: #b3b3b3;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.card-body {
+    background-color: #DD4B39;
+    color: #ccc;
+}
+
+.forgot-pass {
+    color: #888 !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.content a {
+    color: white;
+    text-decoration: underline;
+}
+
+.content .btn {
+    height: 34px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.content .forgot-pass {
+    position: relative;
+    top: 2px;
+    font-size: 14px;
+}
+
+.icon {
+    position: absolute;
+    margin-bottom: 80%;
+}
